@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Variables
+{
+    class Program
+    {
+        static void Main ()
+        {
+            int number = 5;
+            Console.WriteLine(number);
+        }
+    }
+}

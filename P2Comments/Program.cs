@@ -5,7 +5,7 @@
  */
 namespace Comments
 {
-    class Comments
+    class Program
     {
         /// This is the main method, in console it is the method that will run first before all others
 
