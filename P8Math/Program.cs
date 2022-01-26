@@ -64,34 +64,14 @@
             Console.WriteLine("Clamp:");
             double clamp1 = System.Math.Clamp(first, 1, 5);
             double clamp2 = System.Math.Clamp(second, 1, 5);
-            if (clamp1 > 5)
-            {
-                Console.Write(clamp1+":");
-                Console.WriteLine(" Your first number was bigger than 5");
-            }
-            else if(clamp1 < 5)
-            {
-                Console.Write(clamp1+":");
-                Console.WriteLine(" Your first number was smaller than 6");
-            }
-            
-            
-            if (clamp2 > 5)
-            {
-                Console.Write(clamp2+":");
-                Console.WriteLine(" Your second number was bigger than 5");
-            }
-            else if(clamp2 < 5)
-            {
-                Console.Write(clamp2+":");
-                Console.WriteLine(" Your second number was smaller than 6");
-            }
-            
-           
+            Console.Write("First number ");
+            Console.WriteLine(clamp1);
+            Console.Write("Second number ");
+            Console.WriteLine(clamp2);
             
             Console.WriteLine("Pow:");
             double pow = System.Math.Pow(first, second);
-            Console.WriteLine("Your first number to the power of your second number is " + pow);
+            Console.WriteLine(first + " to the power of " + second + " is " + pow);
         }
     }
 }
