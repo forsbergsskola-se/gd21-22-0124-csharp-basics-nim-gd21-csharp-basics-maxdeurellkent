@@ -12,7 +12,15 @@ namespace Comments
         static void Main()
         {
             // we are using the console class to use the WriteLine function which takes in a string argument to write out a new line and the string "Hellow World!"
+            
             Console.WriteLine("Hello World!");
+        }
+        /// <summary>
+        /// This is a bunch of hot dogs
+        /// </summary>
+        static void HotDog()
+        {
+            
         }
     }
 }
