@@ -1,4 +1,4 @@
-﻿namespace Random
+﻿namespace RandomCrit
 {
     class Program
     {
@@ -7,7 +7,7 @@
             Console.WriteLine("Please give me a seed (integer)");
             string seedString = Console.ReadLine();
             int seed = Convert.ToInt32(seedString);
-            System.Random random = new System.Random(seed);
+            Random random = new Random(seed);
             
             Console.WriteLine("Three integers between 0 and 5");
             Console.WriteLine(random.Next(0,5));
@@ -30,21 +30,12 @@
             float critChance = Convert.ToSingle(critChanceString);
 
             //would be nice to use a loop here :) and maybe even above
-            
-            string hit = random.NextDouble() <= critChance ? "Crit" : "No Crit";
-            Console.WriteLine(hit);
-            
-            hit = random.NextDouble() <= critChance ? "Crit" : "No Crit";
-            Console.WriteLine(hit);
-            
-            hit = random.NextDouble() <= critChance ? "Crit" : "No Crit";
-            Console.WriteLine(hit);
-            
-            hit = random.NextDouble() <= critChance ? "Crit" : "No Crit";
-            Console.WriteLine(hit);
-            
-            hit = random.NextDouble() <= critChance ? "Crit" : "No Crit";
-            Console.WriteLine(hit);
+            int i = 0;
+            while (i < 5)
+            {
+                Console.WriteLine(random.NextDouble() <= critChance ? "Crit" : "No Crit");
+                i++;
+            }
         }
     }
 }
