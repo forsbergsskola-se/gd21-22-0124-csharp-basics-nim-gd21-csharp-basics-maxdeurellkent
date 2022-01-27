@@ -8,10 +8,10 @@
             string age = Console.ReadLine();
             int ageNum = Convert.ToInt32(age);
             
-            if (ageNum <= 12 & ageNum >= 0) Console.WriteLine("You are a child");
-            else if (ageNum <= 19 & ageNum >= 13) Console.WriteLine("You are a teenager");
-            else Console.WriteLine("You are a grown-up");
-
+            
+           if (ageNum <= 12 & ageNum >= 0) Console.WriteLine("You are a child");
+           else Console.WriteLine(ageNum <= 19 & ageNum >= 13 ?  "You are a teenager" : "You are a grownup");
+           
             Console.WriteLine("Give me another integer.");
             string numString = Console.ReadLine();
             int num = Convert.ToInt32(numString);
