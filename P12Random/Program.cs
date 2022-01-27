@@ -29,6 +29,8 @@
             string critChanceString = Console.ReadLine();
             float critChance = Convert.ToSingle(critChanceString);
 
+            //would be nice to use a loop here :) and maybe even above
+            
             string hit = random.NextDouble() <= critChance ? "Crit" : "No Crit";
             Console.WriteLine(hit);
             

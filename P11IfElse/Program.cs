@@ -19,6 +19,7 @@
             int max = Math.Max(num, ageNum);
             Console.WriteLine("The biggest number out of your age and the number you entered is: " + max);
             
+            //using the ternary operator isntead of if else here
             string oddOrEven = max % 2 != 0 ? "The number you entered is odd" : "The number you entered is even";
             Console.WriteLine(oddOrEven);
             
